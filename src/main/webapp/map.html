@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>飞机大战</title>
+<style type="text/css">
+@import url("css/shoot.css");
+</style>
+<!-- <link rel="stylesheet" href="css/shoot.css"> -->
+</head>
+<body>
+	<!-- 整个外部的包装 -->
+	<div id="wrapper">
+		<div id="game-area"><!-- 游戏区域 -->
+			<img id="start-image" onclick="running()" src="image/start.png">
+			<img id="pause-image" onclick="running()"  src="image/pause.png">
+			<img id="gameover-image" onclick="running()" src="image/gameover.png">
+		</div>
+		<div id="score-area"><!-- 分数显示区域 -->
+			<p>
+				<span class="score-title">LIFE:</span>
+				<span id="show-life"></span>
+			</p>
+			<p>
+				<span class="score-title">SCORE:</span>
+				<span id="show-score"></span>
+			</p>
+			<p>
+				<span class="score-title">
+					<img src="image/bullet.png">
+				</span>
+				<span id="normal-fire"></span>
+			</p>
+			<p>
+				<span class="score-title">
+					<img src="image/bullet.png">
+					<img src="image/bullet.png">
+				</span>
+				<span id="double-fire"></span>
+			</p>
+			<p>
+				<span class="score-title">
+					<img src="image/bullet.png">
+					<img src="image/bullet.png">
+					<img src="image/bullet.png">
+				</span>
+				<span id="triple-fire"></span>
+			</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="jq/jquery.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/hero.js"></script>
+	<script type="text/javascript" src="js/world.js"></script>
+	<script type="text/javascript" src="js/airplane.js"></script>
+	<script type="text/javascript" src="js/bigplane.js"></script>
+	<script type="text/javascript" src="js/bee.js"></script>
+	<script type="text/javascript" src="js/bullet.js"></script>
+</body>
+</html>

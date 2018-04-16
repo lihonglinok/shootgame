@@ -1,0 +1,74 @@
+#wrapper{
+	border:1px solid #888;
+	margin:0 auto;
+	width:804px;
+	height:612px;
+}
+#game-area,#score-area{
+	border:1px solid #888;
+	margin-top:10px;
+	margin-left:10px;
+	height:590px;
+	float:left;
+}
+
+#game-area{
+	position:relative;
+	text-align:center;
+	line-height:590px;
+	width:480px;
+	overflow:hidden;
+	background-image: url("../image/background.png");
+	animation:background 10s infinite;
+	animation-timing-function:linear;
+}
+#hero{
+	position: absolute;
+	width:48px;
+	height:62px;
+	bottom: 100px;
+	left:235px;
+}
+
+#start-image,#pause-image,#gameover-image{
+	height:590px;
+}
+
+.bullet{
+	width:4px;
+	height:7px;
+	position: absolute;
+}
+
+.airplane{
+	width:24px;
+	height:18px;
+	position: absolute;
+}
+.bigplane{
+	width:34px;
+	height:49px;
+	position: absolute;
+}
+
+.bee{
+	width:30px;
+	height:25px;
+	position:absolute;
+}
+.score-title{
+	display:inline-block;
+	width:100px;
+	padding-left: 20px;
+}
+@keyframes background {
+	0% { background-position: 0px 0px; }
+	100% { background-position: 0px 852px;  }
+}
+
+#score-area{
+	width:290px;
+	font-size: 25px;
+	color: #666;
+	font-weight: 800;
+}
